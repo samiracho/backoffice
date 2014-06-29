@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+    <correo tokens="{usuario},{contrasenya},{urlbackoffice},{tituloweb}">
+        <asunto>{tituloweb}</asunto>
+    <cuerpo>
+        <![CDATA[
+        
+        <html>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <body>
+                <style>
+                    p {margin-left:20px;}
+                    body {background-color: white;}
+                </style>
+                
+                <p>Bienvenido a {tituloweb}</p>
+                <p>Sus credenciales son:</p>
+            
+                <ul>
+                <li>Usuario: {usuario}</li>
+                <li>Contraseña: {contrasenya}</li>
+                </ul>
+                <p>Podrá acceder al panel de control desde <a href="{urlbackoffice}">El siguiente enlace</a><p>
+            </body>
+        </html>
+
+        ]]>
+    </cuerpo>
+</correo>
+
